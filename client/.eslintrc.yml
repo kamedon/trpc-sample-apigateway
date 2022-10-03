@@ -1,0 +1,17 @@
+---
+root: true
+env:
+  browser: true
+parser: "@typescript-eslint/parser"
+plugins:
+  - "@typescript-eslint"
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:react/recommended
+  - plugin:react-hooks/recommended
+  - prettier
+rules:
+  lines-between-class-members: error
+  react/react-in-jsx-scope: 0

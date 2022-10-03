@@ -1,0 +1,13 @@
+{
+  "name": "trpc-sample-apigateway",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
