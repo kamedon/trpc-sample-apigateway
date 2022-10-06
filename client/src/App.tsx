@@ -10,7 +10,7 @@ const createTRPCClient = () => {
   return trpc.createClient({
     links: [
       httpBatchLink({
-        url: "http://localhost:4000/api",
+        url: "/api",
       }),
     ],
   });

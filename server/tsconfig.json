@@ -13,7 +13,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "outDir": "dist",
-    "rootDir": "./"
+    "baseUrl": "./",
   },
   "exclude": [
     "./src/server.ts",

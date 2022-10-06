@@ -7,12 +7,13 @@ export default defineConfig({
     port: 4000,
     proxy: {
       "^/api/*": {
-        target: "http://localhost:4100/",
+        // target: "https://d337qn2w5e2li7.cloudfront.net",
+        target: "https://ybe6g0d9v2.execute-api.ap-northeast-1.amazonaws.com",
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => {
-          return path.replace("/api", "/");
-        },
+        // rewrite: (path) => {
+        //   return path.replace("/api", "/");
+        // },
       },
     },
   },

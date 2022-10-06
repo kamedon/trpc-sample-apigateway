@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:dev": "aws s3 sync dist s3://trpc-sample-kamedon --delete"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.9.0",

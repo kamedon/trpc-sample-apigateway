@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "./dist/index.js",
-  "types": "./types/src/trpc/index.d.ts",
+  "types": "./types/trpc/index.d.ts",
   "scripts": {
     "dev": "ts-node src/server.ts",
     "build": "yarn build:src; yarn build:type",
     "build:src": "rm -rf dist; tsc --project tsconfig.json",
     "build:type": "rm -rf types; tsc -P tsconfig-types.json --emitDeclarationOnly",
-    "build:lambda": "rm lambda.zip; docker build -t kboardgame-server .; docker run --rm --volume $PWD:/output kboardgame-server"
+    "build:lambda": "rm lambda.zip; docker build -t trpc-sample .; docker run --rm --volume $PWD:/output trpc-sample"
   },
   "keywords": [],
   "author": "",
